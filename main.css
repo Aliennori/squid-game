@@ -29,6 +29,14 @@ body{
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    transform: translateY(-100%);
+    animation: fadeIn 3s forwards;
+    
+}
+@keyframes fadeIn {
+    to{
+        transform: translateY(0);
+    }
     
 }
 .text{
@@ -59,6 +67,8 @@ nav ul li a:hover{
     padding: 5px;
     margin-right: 3em;
 }
+
+
 .content {
     display: flex;    
 
@@ -66,13 +76,23 @@ nav ul li a:hover{
 .left {
     width: 50%;
     padding: 2em;
-
 }
 .left p{
     margin-top: 20px;
 }
 .left img{
     width: 50%;
+}
+.desc{
+    transform: translateX(-100%);
+    animation: slideIn 3s forwards;
+
+}
+@keyframes slideIn {
+    to{
+        transform: translateX(0);
+    }
+    
 }
 button {
     background-color: var(--pink);
@@ -99,6 +119,13 @@ button:hover{
 }
 .icon {
     height: 70vh;
+    transform: translateY(-100%);
+    animation: slideIn 3s forwards;
+}
+@keyframes slideIn{
+    to{
+        transform: translateY(0);
+    }
 }
 .wrapper {
     margin-top: 40px;
